@@ -13,5 +13,12 @@ Feature: User can see the campaigns on index page
         Then I should see "Brain surgery"
         And I should see "I grew up always helping others."
         And I should see "1000"
-        When I click 
-        And show me the page
+        When I click "Donate now"
+        And I fill in "Enter your Donation" with "500"
+        And I fill in "First name" with "Hanna"
+        And I fill in "Last name" with "Nyman"
+        And I fill in "Email" with "hanna@tuna.se"
+        And I fill in "Postal code" with "123456"
+        And I click "Proceed to pay"
+
+        # And show me the page
