@@ -23,3 +23,13 @@ end
 Then('show me the page') do
     save_and_open_page
 end
+
+Given("I visit the {string} page") do |value|
+    campaign = Campaign.find_by(title: value)
+    visit campaign_path(campaign)
+end
+  
+When("I fill in {string} with {string}") do |string, string2|
+    pending # Write code here that turns the phrase above into concrete actions
+end
+  
